@@ -1,35 +1,41 @@
 <html>
-    <head></head>
+    <head>
+        <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+    </head>
     <body>
         <h4>Course Status</h4>
         <table>
             <tbody>
                 <tr>
                     <td>
-                        <button>Unpublish</button>
+                        <button class="btn btn-light">Unpublish</button>
                     </td>
                     <td>
-                        <button>Publish</button>
+                        <button class="btn btn-light">Publish</button>
                     </td>
                 </tr>
             </tbody>
         </table>
-        <ul>
-            <li><a href="/Kanbas/Courses/Home/screen.html">Import Existing Content</a></li>
-            <li><a href="/Kanbas/Courses/Home/screen.html">Import From Commons</a></li>
-            <li><a href="/Kanbas/Courses/Home/screen.html">Choose Home Page</a></li>
-            <li><a href="/Kanbas/Courses/Home/screen.html">View Course Stream</a></li>
-            <li><a href="/Kanbas/Courses/Home/screen.html">New Announcement</a></li>
-            <li><a href="/Kanbas/Courses/Home/screen.html">New Analytics</a></li>
-            <li><a href="/Kanbas/Courses/Home/screen.html">View Course Notifications</a></li>
+        <ul class="list-unstyled">
+            <li><a href="/Kanbas/Courses/Home/screen.html" class="btn btn-light btn-block" style="width: 220px;">Import Existing Content</a></li>
+            <li><a href="/Kanbas/Courses/Home/screen.html" class="btn btn-light btn-block" style="width: 220px;">Import From Commons</a></li>
+            <li><a href="/Kanbas/Courses/Home/screen.html" class="btn btn-light btn-block" style="width: 220px;">Choose Home Page</a></li>
+            <li><a href="/Kanbas/Courses/Home/screen.html" class="btn btn-light btn-block" style="width: 220px;">View Course Stream</a></li>
+            <li><a href="/Kanbas/Courses/Home/screen.html" class="btn btn-light btn-block" style="width: 220px;">New Announcement</a></li>
+            <li><a href="/Kanbas/Courses/Home/screen.html" class="btn btn-light btn-block" style="width: 220px;">New Analytics</a></li>
+            <li><a href="/Kanbas/Courses/Home/screen.html" class="btn btn-light btn-block" style="width: 220px;">View Course Notifications</a></li>
         </ul>
-        <h4>Coming Up</h4>
-        <a href="/Kanbas/Courses/Home/screen.html">View Calendar</a>
-        <br />
-        <ul>
-            <li><a href="/Kanbas/Courses/Home/screen.html">Lecture CS5610 | 1/8</a></li>
-            <li><a href="/Kanbas/Courses/Home/screen.html">Lecture CS5610 | 1/15</a></li>
-            <li><a href="/Kanbas/Courses/Home/screen.html">Lecture CS5610 | 1/22</a></li>
+        <hr />
+        <div class="row">
+            <h4 class="col">To Do</h4>
+            <a href="/Kanbas/Courses/Home/screen.html" class="col text-danger">View Calendar</a>
+        </div>
+        <hr />
+        <ul class="list-unstyled">
+            <li><a class="text-danger" href="/Kanbas/Courses/Home/screen.html">Lecture CS5610 | 1/8</a></li>
+            <li><a class="text-danger" href="/Kanbas/Courses/Home/screen.html">Lecture CS5610 | 1/15</a></li>
+            <li><a class="text-danger" href="/Kanbas/Courses/Home/screen.html">Lecture CS5610 | 1/22</a></li>
         </ul>
     </body>
 </html>
