@@ -1,19 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Routes, Route, BrowserRouter} from "react-router-dom";
+import Kanbas from './Kanbas';
+import Assignment3 from './labs/a3';
+import HelloWorld from './labs/a3/HelloWorld';
+import Landing from './landing';
+import './libs/bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <a href="/Labs/a1/index.html">Lab 1</a>
-        <br />
-        <a href="/Labs/a2/index.html">Lab 2</a>
-        <br />
-        <a href="/Kanbas/Dashboard/screen.html">A2 Kanbas Dashboard</a>
-      </header>
-    </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/kanbas/*" element={<Kanbas />} />
+          <Route path="/Labs/a3/*" element={<Assignment3 />} />
+          <Route path="/hello" element={<HelloWorld />} />
+          <Route path="/" element={<Landing />} />
+        </Routes>
+      </BrowserRouter>
   );
 }
 
