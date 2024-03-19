@@ -5,7 +5,7 @@ function HelloRedux() {
   const { message } = useSelector((state: LabState) => state.helloReducer);
   return (
     <div>
-      <h1>Hello Redux</h1>
+      <h1>Helloo Redux</h1>
       <h2>{message}</h2>
     </div>
   );
